@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>
+			新益求新网
+		</title>	
+		<style>
+			table tr td,th
+			{
+				border:1px solid #000;
+			}
+		</style>	
+	</head>
+	<body>
+		<h1>新益求新网</h1>
+		<div id="jianjie">
+			<p><strong>袁统新</strong>，<em>2015年的五月一号</em>，报名<strong>北京航空航天大学</strong>,<em>计算机与科学专业</em>,<span>本科</span>。<q>人生第一次走进现代科技的学习</q></p>
+			<hr/>
+			<blockquote>本专业主要学习计算机基础，接受从事软件应用方面的基本训练，具备应用软件解决实际问题的基本能力。</blockquote>
+			<blockquote>
+				本专业毕业生&nbsp;适合的工作岗位是计算机程序设计师。<br/>
+				适合于熟练地按照工程化的思路进行软件编制、软件测试的工作岗位，<br/>能担任各种企事业单位和各级工程建设部门、管理部门的计算机软件和硬件维护、网络的组建、维护等工作，<br/>
+				也可从事计算机研究与应用、软件开发等方面的工作。
+			</blockquote>
+		</div>
+		<div id="javacode">
+			<pre>
+				public static void main()
+				{
+					System.out.println("浏览器应用系统开发");
+				}
+			</pre>
+		</div>
+		<div id="ccode">
+			<pre>
+				#include &ltstdio.h&gt
+				#include &ltiostream&gt
+				using namespace std;
+				int main()
+				{
+					cout<<"桌面应用系统开发";
+					return 0;
+				}
+			</pre>
+		</div>
+		<div id="cscode">
+			<pre>
+				static void Main()
+				{
+					Console.WriteLine("可视化界面应用程序开发");
+					Console.ReadLine();
+				}
+			</pre>
+		</div>
+		<div id="ssms">
+			<pre>
+				use master
+				go
+				if exists(select * from sysdatabases where name='XinDB')
+					drop Database XinDB
+				go
+				Create Database XinDB 
+				(
+					name='XinDB_data',
+					filename='XinDB.mdf',
+					size=10,
+					filegrowth=15%
+				)
+				log on
+				(
+					name='XinDB_ldata',
+					filename='XinDB_log.ldf',
+					size=5,
+					filegrowth=1,
+					maxsize=10
+				)
+				go
+				if exists(select * from sysobjects where name='T1')
+					drop Table T1
+				go
+				Create Table T1
+				(
+					no int identity(1000,1) Primary Key,
+					name varchar(10) unique not null,
+					pwd varchar(10) check(len(pwd)==6) not null,
+					age int default(18) not null,
+					sex char(2) check(sex in('男','女')) not null,
+					school varchar(20) not null
+				)
+				go
+			</pre>
+		</div>
+		<div id="oracle">
+			<blockquote>
+				<code>Alter Table T1 add constraint ck_T1_school check(school like '%市%大学%')</code>
+			</blockquote>
+		</div>
+		<div id="js">
+			<pre>
+				var scode="动态网站设计";
+				for(var i=0;i<10;i++)
+				{
+					alert(scode);
+				}
+			</pre>
+		</div>
+		<div id="knowledge">
+			<ul>
+				<li>JAVA</li>
+				<li>HTML+CSS+JS+JQ</li>
+				<li>C#</li>
+				<li>Winforms</li>
+				<li>SQL Server</li>
+				<li>MySQL</li>
+				<li>ORACLE</li>
+				<li>C</li>
+				<li>C++</li>
+			</ul>
+		</div>
+		<div id="s1">
+			<ol>
+				<li>使用JAVA理解程序逻辑</li>
+				<li>使用HTML语言和CSS开发商业站点</li>
+				<li>C#语言和数据库技术基础</li>
+				<li>使用C#开发数据库应用系统</li>
+			</ol>
+		</div>
+		<div id="s2">
+			<ol>
+				<li>优化MySchool数据库设计</li>
+				<li>深入.NET平台和C#编程</li>
+				<li>深入.NET平台的软件系统分层开发</li>
+				<li>使用Java实现面向对象编程</li>
+				<li>使用jQuery快速高效制作网页交互特效</li>
+				<li>使用JSP／Servlet技术开发新闻发布系统</li>
+			</ol>
+		</div>
+		<div id="t1">
+			<table summaty="这个表格描述第一学期所有科目的授课时间">
+				<caption>第一学期科目授课时间表</ccaption>
+				<tr>
+					<th>课程</th>
+					<th>修课日期</th>
+				</tr>
+				<tr>
+					<td>使用JAVA理解程序逻辑</td>
+					<td>2015.6</td>
+				</tr>
+				<tr>
+					<td>使用HTML语言和CSS开发商业站点</td>
+					<td>2015.8<td>
+				</tr>
+			</table>
+		</div>
+		<div id="http">
+			<blockquote>
+				<a href="http://www.baidu.com" title="点击进入新益求新网" target="_blank">新益求新网</a>
+			</blockquote>
+		</div>
+		<div id="img">
+			<a href="新益求新网登录.html" title="点击进入新益求新网登录"><img src="logo.png" alt="LOGO图片正在下载" title="网站LOGO"/></a>
+		</div>
+		
+		<div id="author">
+			<address>网站设计维护:<a href="mailto:2112246206@qq.com?subject=问题反馈&body=网站反馈相关&cc=v_yuantongxin@outlook.com&bcc=admin@qq.com">袁统新</a> 北京市朝阳区朝外大街乙4号-a座</address>
+		</div>
+	</body>
+</html>
